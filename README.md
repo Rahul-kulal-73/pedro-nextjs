@@ -1,4 +1,7 @@
-# Creating a New Project
+# Next.js Beginner Guide: Setup, Routing, and Components
+## Folder Naming Convention
+Folder names should consist of all lowercase letters.
+## Creating a New Project
 ```bash
 npx create-next-app .
 ```
@@ -11,9 +14,14 @@ You will be prompted with the following options:
 - √ Would you like to use the App Router? (recommended) ... No / Yes ✅
 - √ Would you like to use Turbopack for next dev? ... No / Yes ✅
 - √ Would you like to customize the import alias (@/* by default)? ... No ✅ / Yes
-Creating Routes & Navigation
-To create a route, simply create a folder inside the app directory. Example: Create a folder named about, and inside it, create a page.tsx file. When a user accesses localhost:3000/about, the content of page.tsx will be displayed.
+## Creating Routes & Navigation
+- To create a route, simply create a folder inside the `app` directory. Example: Create a folder named `about`, and inside it, create a `page.tsx` file. When a user accesses `localhost:3000/about`, the content of `page.tsx` will be displayed.
 
-This content is rendered through the {children} prop in layout.tsx.
+- This content is rendered through the `{children}` prop in `layout.tsx`.
 
-Use the <Link> tag for navigation (similar to the standard <a> tag).
+- Use the `<Link>` tag for navigation (similar to the standard `<a>` tag).
+
+##  Working with Images
+- Use the <Image> component to add `images` in Next.js.
+- It optimizes images based on the device resolution and supports lazy loading by default.
+- To use external images, configure the allowed hostnames in `next.config.ts`.
